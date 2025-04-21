@@ -1,5 +1,5 @@
 -- How many reviews are written per neighborhood?
-SELECT COUNT(reviews.id),neighborhood FROM reviews
+SELECT neighborhood, COUNT(reviews.id) FROM reviews
 INNER JOIN listings on reviews.listing_id = listings.id
 GROUP BY neighborhood
 -- +------------------------+----------+

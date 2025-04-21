@@ -1,5 +1,5 @@
 -- How many of each property type are there in Hyde Park?
-SELECT COUNT(id), property_type from listings
+SELECT property_type, COUNT(id) from listings
 WHERE neighborhood = "Hyde Park" 
 GROUP BY property_type
 -- +-------------------------------------+----------+
